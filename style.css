@@ -4,6 +4,7 @@ body {
     align-items: center;
     margin: 0;
     height: 100vh;
+    flex-direction: column;
 }
 
 #container{
@@ -16,8 +17,6 @@ body {
 }
 
 .box {
-    border: 1px solid black;
-    width: 6.25%;
-    height: 6.25%;
-    box-sizing: border-box;
+    border: 0.5px solid black;
+    box-sizing: border-box;    
 }
