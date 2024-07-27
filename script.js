@@ -53,32 +53,35 @@ function createGrid(ratio){
         box.classList.toggle('box')
         box.style.width = `calc(100%/${ratio})`
         box.style.height = `calc(100%/${ratio})`
-        box.addEventListener('mouseover' , () => {
-            box.style.backgroundColor = getRandomRgbColor();
+        box.addEventListener('mouseenter' , () => {
+            box.style.backgroundColor = '#C8ACD6';
         })
         container.appendChild(box);
 
 
         //add shades of gray
         grayColour.addEventListener('click' , () => {
-            box.addEventListener('mouseover' , () => {
+            box.addEventListener('mouseenter' , () => {
                 box.style.backgroundColor = getGrayShade();
             })
         })
 
         //add random colours
         Ran.addEventListener('click' , () => {
-            box.addEventListener('mouseover' , () => {
+            box.addEventListener('mouseenter' , () => {
                 box.style.backgroundColor = getRandomRgbColor();
             })
         })
         
         // clear the sketch pad
         clear.addEventListener ('click', () =>{
-            box.style.backgroundColor = "white";
+            box.style.backgroundColor = "#2E236C";
+            box.addEventListener('mouseenter' , () => {
+                box.style.backgroundColor = '#C8ACD6';
+            })
         })
         
     }
 }
 
-createGrid(16)
+createGrid(50)
